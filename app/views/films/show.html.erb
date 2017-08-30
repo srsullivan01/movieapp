@@ -1,0 +1,8 @@
+<h2> <%= @film.title %> <%= link_to "edit", edit_film_path(@film)%></h2>
+this is text
+
+<h3> <%= @film.genre %> </h3>
+<h3> <%= @film.synopsis %> </h3>
+<h3> <%= @film.favorite %> </h3>
+
+<%= button_to "Delete", action: "destroy" %>

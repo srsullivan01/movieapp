@@ -1,0 +1,22 @@
+<%= form_for @film do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+
+  <%= f.label :synopsis %>
+  <%= f.text_area :synopsis %>
+
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+
+  <%= f.label :picture_url %>
+  <%= f.text_field :picture_url %>
+
+  <%= f.label :favorite %>
+  <%= f.check_box :favorite %>
+
+  <%= f.submit %>
+
+<% end %>
